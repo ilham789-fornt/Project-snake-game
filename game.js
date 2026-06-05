@@ -142,7 +142,7 @@ function checkFood() {
     ) {
         snake.push({});
         food = generateFood();
-        score += 20;
+        score += 1;
         updateLevel();
     }
 }
@@ -152,7 +152,7 @@ function checkFood() {
 // ==========================
 function updateLevel() {
     // LEVEL 1
-    if (score <= 25) {
+    if (score <= 10) {
         if (level !== "Level 1") {
             showLevelTransition("1");
         }
@@ -160,7 +160,7 @@ function updateLevel() {
         gameSpeed = 250;
     }
     // LEVEL 2
-    else if (score <= 50) {
+    else if (score <= 15) {
         if (level !== "Level 2") {
             showLevelTransition("2");
         }
@@ -168,7 +168,7 @@ function updateLevel() {
         gameSpeed = 200;
     }
     // LEVEL 3
-    else if (score <= 75) {
+    else if (score <= 20) {
         if (level !== "Level 3") {
             showLevelTransition("3");
         }
@@ -176,7 +176,7 @@ function updateLevel() {
         gameSpeed = 150;
     }
     // LEVEL 4
-    else if (score <= 100) {
+    else if (score <= 30) {
         if (level !== "Level 4") {
             showLevelTransition("4");
         }
